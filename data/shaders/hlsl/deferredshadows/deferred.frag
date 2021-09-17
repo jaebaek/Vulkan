@@ -1,14 +1,25 @@
 // Copyright 2020 Google LLC
 
+[[vk::combinedImageSampler]]
 Texture2D textureposition : register(t1);
+[[vk::combinedImageSampler]]
 SamplerState samplerposition : register(s1);
+
+[[vk::combinedImageSampler]]
 Texture2D textureNormal : register(t2);
+[[vk::combinedImageSampler]]
 SamplerState samplerNormal : register(s2);
+
+[[vk::combinedImageSampler]]
 Texture2D textureAlbedo : register(t3);
+[[vk::combinedImageSampler]]
 SamplerState samplerAlbedo : register(s3);
+
 // Depth from the light's point of view
 //layout (binding = 5) uniform sampler2DShadow samplerShadowMap;
+[[vk::combinedImageSampler]]
 Texture2DArray textureShadowMap : register(t5);
+[[vk::combinedImageSampler]]
 SamplerState samplerShadowMap : register(s5);
 
 #define LIGHT_COUNT 3
