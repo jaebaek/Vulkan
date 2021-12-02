@@ -85,7 +85,7 @@ bool frustumCheck(float4 Pos, float2 inUV)
 	return true;
 }
 
-ConstantsHSOutput ConstantsHS(InputPatch<VSOutput, 4> patch)
+ConstantsHSOutput ConstantsHS(OutputPatch<HSOutput, 4> patch)
 {
     ConstantsHSOutput output = (ConstantsHSOutput)0;
 
